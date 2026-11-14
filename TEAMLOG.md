@@ -167,3 +167,24 @@
 
 * **Handoff package:**
   - *Commitments before next Day 2:* Before the next Day 2 session, we will get ready to pitch our project for when we hand it off.
+
+## 2026-11-12 Day 2 Workshop:
+* **Present:** Vanshika, Emma
+
+* **Scribe:** Vanshika
+
+* **Standup**
+  - *Vanshika:* Working on HANDOVER.md.
+  - *Emma:* Working on HANDOVER.md.
+
+* **Plan**
+  - *Goals for today:*
+    - (1) Finish HANDOVER.md
+* **Build**
+  - *Shipped:* Goal 1
+
+* **Review**
+  - *Clean-clone check:* Our milestone 2 working properly no error occurred during checking.
+
+* **Handoff package:**
+  - *Commitments before next Day 2:* Before the next Day 2 session, we will working on handover.md file provided by other group.
