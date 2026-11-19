@@ -14,7 +14,7 @@ Currently, we have a working front-end and back-end API.
 2. Added review of Milestone 1 files so user understands how the website works
 
 ## 5. Known problems and unfinished work
-Our website from Milestone 1 does not currently coinside with the front-end from Milestone 2. That website also has no backend features, so it is unable to add or change any products.
+Our website from Milestone 1 does not currently co-inside with the front-end from Milestone 2. That website also has no backend features, so it is unable to add or change any products.
 
 ## 6. Handover checks (receiving pod)
 Version received: commit ______
@@ -28,7 +28,12 @@ For the next steps, I would suggest seeing if the website from Milestone 1 (inde
 
 ## 9. Takeover Notes (receiving pod): one sentence for each
 - Do we understand what the app does and how the code is organized?
+	-Yes, we understand what the app does, and how the code is organized. 
 - Can we run it from a fresh clone?
+	-Yes, we got the fresh clone to run
 - Do we know what is complete and what isn't?
+	-Everything seems complete except for converting app.jsx in the client folder.
 - Do we know the important decisions and the known problems?
+	-Yes, they clearly stated the problems and bugs involved in the website.
 - Do we know what we would do first for Milestone 3?
+	-Start with fixing the app.jsx file to get that running, then start implementing SQLite/Prisma
