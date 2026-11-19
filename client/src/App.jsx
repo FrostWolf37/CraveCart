@@ -8,7 +8,7 @@ export default function App() {
     <>
       <header>
         <h1><Link to="/">Product List</Link></h1>
-        <nav><Link to="/products/new">Add a product</Link></nav>
+        <nav><Link to="/products/new">Add a products</Link></nav>
       </header>
       <main>
         <Routes>
