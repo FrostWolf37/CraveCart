@@ -22,9 +22,9 @@ export default function ProductList() {
   return (
     <section>
       <h2>Products</h2>
-      <ul>
+      <ul id="list" class="cards">
         {products.map(r => (
-          <li key={r.id}><Link to={`/products/${r.id}`}>{r.name}</Link> · {r.category} · ${r.price.toFixed(2)} · {r.quantity} in stock</li>
+          <li key={r.id}>{r.image && <img src={`/${r.image}`} alt={r.alt} width="120" />}<Link to={`/products/${r.id}`}>{r.name}</Link> · {r.category} · ${r.price.toFixed(2)} · {r.quantity} in stock</li>
         ))}
       </ul>
     </section>

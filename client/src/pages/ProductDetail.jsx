@@ -34,6 +34,7 @@ export default function ProductDetail() {
   return (
     <article>
       <h2>{product.name}</h2>
+      <p>{product.image && <img src={`/${product.image}`} alt={product.alt} width="300" />}</p>
       <p>{product.category} · ${product.price.toFixed(2)} · {product.quantity} in stock</p>
       <p><Link to={`/products/${id}/edit`}>Edit</Link> <button onClick={handleDelete}>Delete</button></p>
     </article>
