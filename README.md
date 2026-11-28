@@ -1,6 +1,15 @@
 # Capstone Project
 
-## **Names**: Vanshika and Emma
+## **Names**: Dan and Zach
+### **Original Authors**: Vanshika and Emma
+
+## Database Rationale
+
+To replace the inherited project's temporary in-memory array, we connected CraveCart to a SQLite database using a single `stock` table. Every item in our grocery store shares the exact same basic details—an auto-incrementing `id`, `name`, `category`, `quantity`, `price`, `image` path, and `alt` text. Storing all 35 seeded products in one `stock` table keeps our Express `/api/products` queries simple and fast without needing extra table joins just to load `ProductList` or `ProductDetail`.
+
+The main trade-off we made in our database design was choosing strict data validation over flexibility. In `groceryList.sql`, we set `NOT NULL` rules on our required columns along with SQL `CHECK` constraints that limit `category` to seven specific grocery aisles (`Fruits`, `Vegetables`, `Dairy`, `Bakery`, `Meat & Seafood`, `Beverages`, and `Snacks`) and prevent `quantity` from ever going below zero (`quantity >= 0`). Putting these rules straight into the database guarantees that bad data gets blocked even if something slips past the front-end form validation in `ProductForm`. The downside is that adding a new grocery aisle later on isn't as simple as typing it into the app—we would have to update the `CHECK` constraint in our table schema first.
+
+Overall, backing a single `stock` table with SQLite gives CraveCart reliable persistence across server restarts while keeping the database easy to understand, test, and reset during development.
 
 ## **Project Description**:
 
